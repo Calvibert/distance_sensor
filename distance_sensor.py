@@ -1,6 +1,5 @@
 import RPi.GPIO as GPIO
 import time
-import csv_ext import to_csv
 
 def get_distance():
     GPIO.setmode(GPIO.BCM)
