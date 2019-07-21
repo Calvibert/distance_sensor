@@ -1,4 +1,4 @@
-from .distance_sensor import DistanceSensor
+from distance_sensor import DistanceSensor
 from csv_ext import to_csv
 
 sensor = DistanceSensor()
