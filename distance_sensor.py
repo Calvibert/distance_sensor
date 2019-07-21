@@ -33,3 +33,5 @@ distance = speed_of_sound * pulse_duration
 print 'Distance: ',distance,'cm'
 
 GPIO.cleanup()
+
+print 'Exiting...'
