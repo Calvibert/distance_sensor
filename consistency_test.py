@@ -1,10 +1,12 @@
-from distance_sensor import get_distance
+from .distance_sensor import DistanceSensor
 from csv_ext import to_csv
 
-
+sensor = DistanceSensor()
+sensor.setup()
 try:
     while True:
-        distance = get_distance()
+        distance = sensor.calculate_distance()
         to_csv(distance)
 except KeyboardInterrupt:
+    sensor.close()
     print('interrupted!')
